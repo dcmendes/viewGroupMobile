@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IMCActivity">
+
+    TextView
+    android:id="@+id/titleView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/app_title"
+    android:textSize="24sp"
+    android:layout_centerHorizontal="true"
+    />
+
+    <TextView
+        android:id="@+id/weightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:text="@string/weight_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/heightEdit"
+        app:layout_constraintTop_toBottomOf="@+id/heightEdit" />
+
+    <EditText
+        android:id="@+id/weihghtEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/weightLabel"
+        android:layout_toRightOf="@id/weightLabel"
+        android:hint="Peso em Kg"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightLabel" />
+
+    <TextView
+        android:id="@+id/heightLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weightLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="74dp"
+        android:text="@string/height_label"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/heightEdit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/heightEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/heightLabel"
+        android:layout_toRightOf="@id/heightLabel"
+        android:hint="Altura em metros"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightLabel" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heightLabel"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/result_label"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/result"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="calcularIMC"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weihghtEdit" />
+
+</android.support.constraint.ConstraintLayout>

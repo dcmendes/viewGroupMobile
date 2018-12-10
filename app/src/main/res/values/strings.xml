@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ViewGroups</string>
+    <string name="imc">IMC</string>
+    <string name="conversor">Conversor</string>
+    <string name="sorteio">Sorteio</string>
+    <string name="corp">Malloc Corp</string>
+    <string name="app_title">IMC Cálculo</string>
+    <string name="weight_label">Peso:</string>
+    <string name="height_label">Altura:</string>
+    <string name="result_label">IMC</string>
+    <string name="credits_label">Créditos</string>
+    <string name="malloc_label"> Malloc Corporation</string>
+    <string name="authot_label"> From Mendes Diego</string>
+    <string name="temperatura">Conversor de Temperatura</string>
+    <string name="celsius">Celsius</string>
+    <string name="fahrenheit">Fanrenheit</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="converter">Converter</string>
+</resources>
